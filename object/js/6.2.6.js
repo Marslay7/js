@@ -1,8 +1,9 @@
 /**
- * 寄生构造函数模式
+ * 寄生构造函数模式：
  * 基本思路是创建一个函数，作用仅仅是封装创建对象的代码，再返回新创建的对象
  * 看似是一个工厂函数？
- * 说明：
+ *
+ * 注：
  * 返回的对象与构造函数或者与构造函数的原型属性之间没有关系；
  * 也就是说，构造函数返回的对象与在构造函数外部创建的对象一样；
  * 因此不能依赖instanceof操作符来确定对象类型
@@ -33,13 +34,13 @@ friend.sayName();
 function SpecialArray() {
   // 创建数组
   var values = new Array();
-
   // 添加值
   /**
    * 关于Function.prototype.apply()
    * var a = [];
    * a.push([1,2,3]) =>>> [[1,2,3]]
    * a.push.apply([1,2,3]) =>>> [1,2,3]
+   * arguments为函数内的局部变量
    */
   values.push.apply(values, arguments);
 

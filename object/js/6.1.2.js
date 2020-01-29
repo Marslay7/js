@@ -1,4 +1,7 @@
-// 定义多个属性
+/**
+ * 定义多个属性
+ * Object.defineProperties(对象,{})
+ */
 var book = {};
 
 // 定义了2个数据属性(_year,editon)和1个访问器属性year
