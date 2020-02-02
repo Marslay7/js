@@ -9,7 +9,7 @@
  * reverse
  */
 
-// 创建空数组
+// 创建一个空数组
 var array = new Array();
 
 /**

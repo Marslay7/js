@@ -1,3 +1,3 @@
 # js
 
-### array
+### array merge
